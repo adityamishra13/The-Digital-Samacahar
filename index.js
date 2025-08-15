@@ -3,7 +3,6 @@ const year = date.getFullYear(); // Returns the four-digit year (e.g., 2025)
 const month = date.getMonth();   // Returns the month (0-11, where 0 is January)
 const day = date.getDate();      // Returns the day of the month (1-31)
 const fromdate=year+"-"+(month+1)+"-"+(day-1)
-const APIKEY=process.env.APIKEY
 fetch(`https://newsapi.org/v2/everything?q=india&from=${fromdate}&sortBy=publishedAt&apiKey=${APIKEY}`)
   .then(response => {
     if (!response.ok) {
