@@ -3,7 +3,7 @@ const year = date.getFullYear(); // Returns the four-digit year (e.g., 2025)
 const month = date.getMonth();   // Returns the month (0-11, where 0 is January)
 const day = date.getDate();      // Returns the day of the month (1-31)
 const fromdate=year+"-"+(month+1)+"-"+(day-1)
-fetch(`https://newsapi.org/v2/everything?q=india&from=${fromdate}&sortBy=publishedAt&apiKey=${APIKEY}`)
+fetch(`https://newsapi.org/v2/everything?q=india&from=${fromdate}&sortBy=publishedAt&apiKey=ade613c458dd4cc8b8d71c0633d11e53`)
   .then(response => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
